@@ -1,3 +1,7 @@
+/**
+ * Fixed top navigation: logo/name, in-page scroll links (react-scroll), Resume link,
+ * and responsive mobile menu (hamburger + AnimatePresence). Navbar style changes on scroll (e.g. background).
+ */
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,6 +12,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  /* Track scroll position to toggle navbar background (e.g. transparent vs solid); cleanup on unmount. */
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -16,6 +21,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  /* Section IDs must match the id attributes on the corresponding sections (e.g. #about, #skills). */
   const navLinks = [
     { name: "About", to: "about" },
     { name: "Skills", to: "skills" },
@@ -32,6 +38,7 @@ const Navbar = () => {
           : "bg-transparent py-6"
       }`}
     >
+      {/* Scrolled state toggles solid background + border for better contrast over content */}
       <div className="container mx-auto px-6 flex justify-between items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}

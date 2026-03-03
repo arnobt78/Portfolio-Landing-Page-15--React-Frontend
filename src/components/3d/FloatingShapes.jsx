@@ -1,10 +1,15 @@
-
+/**
+ * 3D starfield background for the Hero: Three.js Canvas with Points (sphere of particles),
+ * subtle rotation and mouse-based parallax. GalaxyStars = one layer of points; GalaxyCore = denser center.
+ * dpr={[1, 2]} caps device pixel ratio for performance.
+ */
 import React, { useRef, useMemo } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 import * as THREE from "three";
 
+/** One layer of star points in a sphere; delta drives rotation for a gentle motion. */
 const GalaxyStars = ({ count = 5000, color = "#fff", size = 0.002, radius = 5 }) => {
     const ref = useRef();
     const sphere = useMemo(() => random.inSphere(new Float32Array(count * 3), { radius }), [count, radius]);
@@ -30,6 +35,7 @@ const GalaxyStars = ({ count = 5000, color = "#fff", size = 0.002, radius = 5 })
     );
 };
 
+/** Denser, smaller sphere with blue tint and additive blending for a "core" effect. */
 const GalaxyCore = () => {
     const ref = useRef();
     // Denser, smaller core
@@ -56,11 +62,12 @@ const GalaxyCore = () => {
     );
 }
 
+/** Composes multiple star layers and applies mouse parallax via useThree().mouse and useFrame. */
 const Background = () => {
     const { mouse } = useThree();
     const groupRef = useRef();
 
-    useFrame((state) => {
+    useFrame(() => {
         // Parallax effect based on mouse position
         if (groupRef.current) {
             groupRef.current.rotation.x = THREE.MathUtils.lerp(groupRef.current.rotation.x, mouse.y * 0.05, 0.1);
@@ -80,10 +87,12 @@ const Background = () => {
     )
 }
 
+/** Wrapper that hosts the Three.js Canvas and a vignette overlay; pointer-events-none so Hero content stays clickable. */
 const FloatingShapes = () => {
     return (
         <div className="absolute inset-0 z-0 bg-black pointer-events-none">
-            <Canvas camera={{ position: [0, 0, 1] }} dpr={[1, 2]}> // Optimization: dpr limit
+            {/* Canvas: dpr [1,2] limits pixel ratio for performance */}
+            <Canvas camera={{ position: [0, 0, 1] }} dpr={[1, 2]}>
                 <color attach="background" args={["#000000"]} />
 
                 <Background />

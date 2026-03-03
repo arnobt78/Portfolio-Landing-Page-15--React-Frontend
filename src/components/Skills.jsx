@@ -1,4 +1,7 @@
-
+/**
+ * Skills section: section title plus a grid of skill categories (from SKILLS).
+ * Each category shows a heading and a list of tag-style items with hover styles.
+ */
 import React from "react";
 import { motion } from "framer-motion";
 import { SKILLS } from "../data/constants";

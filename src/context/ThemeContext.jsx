@@ -1,8 +1,9 @@
-
+/* eslint-disable react-refresh/only-export-components -- ThemeContext exports provider + hook */
 import React, { createContext, useContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext();
 
+/** Provides theme (dark/light) to the tree and syncs it to document.documentElement class and localStorage for persistence. */
 export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
 
@@ -24,4 +25,5 @@ export const ThemeProvider = ({ children }) => {
     );
 };
 
+/** Hook to read theme and toggleTheme from the nearest ThemeProvider. */
 export const useTheme = () => useContext(ThemeContext);

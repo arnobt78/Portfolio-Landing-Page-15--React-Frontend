@@ -1,4 +1,7 @@
-
+/**
+ * Footer: copyright line with dynamic year and name from USER_DETAILS, plus a "Built with" note.
+ * Styled for light/dark (gray-50 in light, black in dark).
+ */
 import React from "react";
 import { USER_DETAILS } from "../data/constants";
 

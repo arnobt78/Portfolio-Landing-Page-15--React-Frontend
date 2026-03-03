@@ -1,4 +1,7 @@
-
+/**
+ * Education section: section title and a vertical timeline (border-l) with one or more
+ * entries (degree, institution, coursework). Styled for dark/light via Tailwind dark: classes.
+ */
 import React from "react";
 import { motion } from "framer-motion";
 

@@ -7,6 +7,7 @@ import studyHubImg from "../assets/studyhub.png";
 import jobPortalImg from "../assets/job-portal.png";
 import smartCartImg from "../assets/smart-cart.png";
 
+/** Central data for the portfolio owner: bio, contact, profile image, social links. Used by Navbar, Hero, About, Contact, Footer. */
 export const USER_DETAILS = {
   names: "John Doe",
   title: "Full Stack Developer (MERN)",
@@ -42,6 +43,7 @@ export const USER_DETAILS = {
   ],
 };
 
+/** Featured projects shown in the Projects section. Each needs: id, title, description, tech[], liveLink, image. */
 export const PROJECTS = [
   {
     id: 1,
@@ -72,6 +74,7 @@ export const PROJECTS = [
   },
 ];
 
+/** Skills grouped by category (e.g. Frontend, Backend, Tools). Rendered as tag lists in the Skills section. */
 export const SKILLS = [
   {
     category: "Frontend",

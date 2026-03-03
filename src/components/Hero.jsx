@@ -1,3 +1,7 @@
+/**
+ * Hero section: full-viewport intro with headline, bio from USER_DETAILS, CTA buttons
+ * (smooth scroll to #projects and #contact), 3D starfield background, and gradient orbs.
+ */
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";

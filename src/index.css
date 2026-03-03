@@ -1,10 +1,13 @@
+/* Tailwind v4 entry: imports utilities and allows @theme / @layer */
 @import "tailwindcss";
 
+/* Custom theme tokens; used by Tailwind classes (e.g. bg-black, bg-zinc-900) */
 @theme {
     --color-black: #000000;
     --color-zinc-900: #18181b;
 }
 
+/* Base styles applied to body: background, text color, font, antialiasing */
 @layer base {
     body {
         @apply bg-black text-white font-sans antialiased;

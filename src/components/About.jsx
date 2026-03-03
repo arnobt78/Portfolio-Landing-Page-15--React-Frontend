@@ -1,3 +1,7 @@
+/**
+ * About section: two-column layout (md+) — profile image with gradient border on the left,
+ * bio and highlight cards (Fresh Perspective, MERN Specialist) on the right. Uses whileInView for scroll-in animation.
+ */
 import React from "react";
 import { motion } from "framer-motion";
 import { USER_DETAILS } from "../data/constants";
@@ -61,7 +65,7 @@ const About = () => {
 
             <div className="grid grid-cols-2 gap-6">
               <div className="p-4 bg-white/5 rounded-xl border border-white/5 shadow-sm">
-                <h4 className="text-2xl font-bold text-white mb-1">fresh</h4>
+                <h4 className="text-2xl font-bold text-white mb-1">Fresh</h4>
                 <p className="text-sm text-gray-400">Perspective</p>
               </div>
               <div className="p-4 bg-white/5 rounded-xl border border-white/5 shadow-sm">

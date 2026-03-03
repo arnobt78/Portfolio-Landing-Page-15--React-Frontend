@@ -1,3 +1,7 @@
+/**
+ * Contact section: heading, short message, social links from USER_DETAILS.socialMatches (icon + label),
+ * and a primary "Say Hello" mailto button using USER_DETAILS.email.
+ */
 import React from "react";
 import { motion } from "framer-motion";
 import { USER_DETAILS } from "../data/constants";

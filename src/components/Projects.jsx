@@ -1,4 +1,8 @@
-
+/**
+ * Projects section: grid of project cards (image, title, short description). Clicking a card
+ * opens a modal (AnimatePresence) with full description, tech tags, and "View Live Project" link.
+ * layoutId on card and modal enables shared layout animation in Framer Motion.
+ */
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PROJECTS } from "../data/constants";
@@ -56,6 +60,7 @@ const Projects = () => {
                     ))}
                 </div>
 
+                {/* Modal for selected project: backdrop click closes; layoutId ties card and modal for animation. */}
                 <AnimatePresence>
                     {selectedId && (
                         <div className="fixed inset-0 z-[60] flex items-center justify-center px-4 bg-black/60 backdrop-blur-sm p-4">
