@@ -1,4 +1,4 @@
-# Portfolio Landing Page 15 - React, Vite, TailwindCSS, Framer Motion Frontend Project
+# Portfolio Landing Page 15 - React, Vite, JavaScript, TailwindCSS, Framer Motion Frontend Project
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-19.2-blue)](https://react.dev/)
@@ -6,11 +6,14 @@
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1.18-blue)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.33-orange)](https://www.framer.com/motion/)
 
-A **single-page portfolio demo** built with React, Vite, TailwindCSS, and Framer Motion. It is intended for learning and instruction: you can run it locally, customize content via a central data file, and reuse its components (navbar, hero, about, skills, projects, education, contact, footer) in your own projects. The app is frontend-only (no backend or API); all content is driven by in-repo data and assets.
+A **single-page portfolio demo** built with React, Vite, JavaScript, TailwindCSS, and Framer Motion. It is intended for learning and instruction: you can run it locally, customize content via a central data file, and reuse its components (navbar, hero, about, skills, projects, education, contact, footer) in your own projects. The app is frontend-only (no backend or API); all content is driven by in-repo data and assets.
 
 - **Live Demo:** [https://portfolio-ui-15.vercel.app/](https://portfolio-ui-15.vercel.app/)
 
-<img width="1874" height="832" alt="Screenshot 2026-03-10 at 12 03 35" src="https://github.com/user-attachments/assets/e7f50ae2-292c-4eae-a08e-388b00d188df" /> <img width="1843" height="895" alt="Screenshot 2026-03-10 at 12 03 46" src="https://github.com/user-attachments/assets/35c55b9f-c9ca-4cd8-b914-6e67485e6a06" /> <img width="1846" height="944" alt="Screenshot 2026-03-10 at 12 04 02" src="https://github.com/user-attachments/assets/48c0154a-6d8c-4153-a801-0c1e3ead691e" /> <img width="1857" height="939" alt="Screenshot 2026-03-10 at 12 04 19" src="https://github.com/user-attachments/assets/f689dc0a-5315-4922-ba2d-6805e6bfc450" />
+![Screenshot 2026-03-10 at 12 03 35](https://github.com/user-attachments/assets/e7f50ae2-292c-4eae-a08e-388b00d188df)
+![Screenshot 2026-03-10 at 12 03 46](https://github.com/user-attachments/assets/35c55b9f-c9ca-4cd8-b914-6e67485e6a06)
+![Screenshot 2026-03-10 at 12 04 02](https://github.com/user-attachments/assets/48c0154a-6d8c-4153-a801-0c1e3ead691e)
+![Screenshot 2026-03-10 at 12 04 19](https://github.com/user-attachments/assets/f689dc0a-5315-4922-ba2d-6805e6bfc450)
 
 ## Table of Contents
 
