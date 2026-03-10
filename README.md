@@ -10,7 +10,7 @@ A **single-page portfolio demo** built with React, Vite, TailwindCSS, and Framer
 
 - **Live Demo:** [https://portfolio-ui-15.vercel.app/](https://portfolio-ui-15.vercel.app/)
 
----
+<img width="1874" height="832" alt="Screenshot 2026-03-10 at 12 03 35" src="https://github.com/user-attachments/assets/e7f50ae2-292c-4eae-a08e-388b00d188df" /> <img width="1843" height="895" alt="Screenshot 2026-03-10 at 12 03 46" src="https://github.com/user-attachments/assets/35c55b9f-c9ca-4cd8-b914-6e67485e6a06" /> <img width="1846" height="944" alt="Screenshot 2026-03-10 at 12 04 02" src="https://github.com/user-attachments/assets/48c0154a-6d8c-4153-a801-0c1e3ead691e" /> <img width="1857" height="939" alt="Screenshot 2026-03-10 at 12 04 19" src="https://github.com/user-attachments/assets/f689dc0a-5315-4922-ba2d-6805e6bfc450" />
 
 ## Table of Contents
 
